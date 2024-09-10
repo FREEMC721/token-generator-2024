@@ -1,2 +1,15 @@
 # token-generator-2024
-it is connected to discord api which help to see if the token is vaild or not
+
+# How To Use The Generator?
+
+1. open file
+2. setup ``config.json`` as u want!
+3. open ternimal
+4. type ``pip install -r requirement.txt``
+5. run gen.py by using ``py gen.py``
+Boom! it working now. Enjoy now!
+
+# have any probelm?
+dc id: darklegendxr
+
+it connect to discord api and it opensoucre code
