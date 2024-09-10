@@ -1,3 +1,6 @@
+# Tool Preview
+![image](https://github.com/user-attachments/assets/f67cd14f-39fa-421f-b6fe-2c57c4160619)
+
 # token-generator-2024
 so basiclly it gen discord account tokens **have low chance to get vaild token 💀**
 
