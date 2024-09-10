@@ -1,0 +1,6 @@
+{
+    "valid_tokens_file": "valid_tokens.txt",
+    "invaild_tokens_files": "tokens.txt",
+    "webhook_url": "https://discord.com/api/webhooks/your-webhook-url",
+    "send_to_webhook": false
+}
