@@ -5,7 +5,7 @@
 1. open file
 2. setup ``config.json`` as u want!
 3. open ternimal
-4. type ``pip install -r requirement.txt``
+4. type ``pip install -r requirements.txt``
 5. run gen.py by using ``py gen.py``
 Boom! it working now. Enjoy now!
 
