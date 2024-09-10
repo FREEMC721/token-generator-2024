@@ -1,4 +1,5 @@
 # token-generator-2024
+so basiclly it gen discord account tokens
 
 # How To Use The Generator?
 
@@ -11,5 +12,3 @@ Boom! it working now. Enjoy now!
 
 # have any probelm?
 dc id: darklegendxr
-
-it connect to discord api and it opensoucre code
